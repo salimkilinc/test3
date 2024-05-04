@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me | SALİM KILINÇ</title>
+    <link rel="icon" href="./assets/icons/salimkilinc-icon.svg">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.cdnfonts.com/css/avenir-lt-pro" rel="stylesheet">
+    <link href="https://db.onlinewebfonts.com/c/028b4cfdfab5d1049178e9b1eb42f49e?family=Poppins+SemiBold" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <style>
+        main {
+            padding: 10vh;
+            padding-left: 20vw;
+            padding-right: 20vw;
+            display: grid;
+        }
+
+        .outer-box{
+            background-color: white;
+            display: grid;
+            grid-template-rows: 9fr 1fr;
+            grid-template-columns: 1fr 1.4fr;
+        }
+
+        .inner-box-left {
+            background-color: #f4ece6;
+            display: flex;
+            flex-flow: column wrap;
+            align-items: center;
+            box-shadow: 0 0 36px 0px grey;
+        }
+
+        .inner-box-left > * {
+            margin: 0;
+        }
+
+        .inner-box-right {
+            background-color: white;
+            padding-left: 5vh;
+            padding-right: 5vh;
+            padding-bottom: 5vh;
+            display: flex;
+            flex-flow: column wrap;
+            gap: 3vh;
+        }
+
+        .inner-box-right > * {
+            margin: 0;
+        }
+
+        .inner-box-bottom {
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 2vh;
+        }
+
+        .inner-box-bottom .follow-icon {
+            height: 4vh;
+        }
+
+        /* .inner-box-bottom .follow-icon:hover {
+            height: 4.5vh;
+        } */
+
+        .inner-box-bottom-right {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        @media (max-width:800px) {
+            main {
+                padding: 0;
+            }
+
+            .outer-box {
+                grid-template-columns: 1fr;
+                grid-template-rows: auto auto auto auto;
+            }
+
+            .inner-box-right {
+                align-items: center;
+            }
+
+            .inner-box-bottom {
+                display: none;
+            }
+
+            .inner-box-bottom-right {
+                margin-bottom: 3vh;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="header-item" id="h-first">
+                <div class="blue-box"></div>
+            </div>
+            <div class="header-item" id="h-second">
+                <a class="external-link" href="https://www.salimkilinc.com" target="_blank"><p><span class="name">Salim Kılınç </span>/ DATA SCIENTIST</p></a>
+            </div>
+            <div class="header-item" id="h-third">
+                <p>Good artists borrow, great artists steal.</p>
+            </div>
+            <div class="header-item" id="h-fourth">
+                <ul class="menu">
+                    <li><a id="current-page" href="./index.html">ABOUT ME</a></li>
+                    <li><a href="./public/cv.html">CV</a></li>
+                    <li class="dropdown">
+                        <a href="./public/projects.html">PROJECTS</a>
+                        <div class="dropdown-content">
+                            <a href="https://www.salimkilinc.com/building-a-recommender-system"  target="_blank">Recommender Systems</a>
+                            <a href="https://www.salimkilinc.com/power-of-natural-language-processing"  target="_blank">Natural Language Processing</a>
+                            <a href="https://www.salimkilinc.com/red-wine-quality-classifier" target="_blank">Balanced Classification</a>
+                            <a href="https://www.salimkilinc.com/all-inclusive-imbalanced-classification" target="_blank">Imbalanced Classification</a>
+                            <a href="https://www.salimkilinc.com/web-scraping-and-machine-learning" target="_blank">Web Scraping and Machine Learning</a>
+                            <a href="https://www.salimkilinc.com/my-hello-world-to-data-science" target="_blank">My 'Hello World' to Data Science</a>
+                        </div>
+                    </li>
+                    <li><a href="./public/contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="outer-box">
+            <div class="inner-box-left">
+                <a href="https://www.salimkilinc.com" target="_blank"><img style="height: 27.55vh; border-radius: 50%; margin-top: 5vh;" id="profile-pic" src="./assets/images/salim.jpeg" alt="A photo of Salim Kılınç in İstanbul" /></a>
+                <p class="name" style="margin-top: 3vh;">Salim Kılınç</p>
+                <div class="blue-box" style="height: 0.4vh; width: 10vh; margin-top: 3vh;"></div>
+                <p style="font-size: 2.5vh; letter-spacing: 0.08em; margin-top: 5vh;">DATA SCIENTIST</p><br />
+                <div style="text-align: center;"><p style="font-size: 1.8vh; letter-spacing: 0.08em; ">FULL-STACK WEB DEVELOPER CANDIDATE</p></div>
+            </div>
+            <div class="inner-box-right">
+                <p style="font-family: 'Poppins SemiBold', sans-serif; font-size: 15vh;">Hello</p>
+                <p style="font-size: 3vh; font-weight: bolder;">Here's who I am & what I do</p>
+                <div class="button-div">
+                    <a href="./public/cv.html"><button class="blue-button">CV</button></a>
+                    <a href="./public/projects.html"><button class="white-button">PROJECTS</button></a>
+                </div>
+                <p style="text-align: justify; line-height: 3.5vh;">Welcome to my online portfolio. I'm Salim, a data scientist passionate about simplifying complex information.
+                    Join me as we explore the world of data, turning it into practical understanding for smarter decisions and innovative solutions.
+                    And I'm also currently attending the Full-Stack Web Development Bootcamp that my company has planned for me, which is the reason why I created this website.
+                    You can visit my actual personal website through the link below. 
+                </p>
+            </div>
+            <div class="inner-box-bottom">
+                <a class="external-link" href="https://www.linkedin.com/in/salimkilinc/" target="_blank"><img class="follow-icon" src="./assets/icons/linkedin-icon.png" alt="LinkedIn Icon"></a>
+                <a class="external-link" href="https://github.com/salimkilinc" target="_blank"><img class="follow-icon" src="./assets/icons/github-icon.png" alt="GitHub Icon"></a>
+                <a class="external-link" href="https://medium.com/@salimkilinc" target="_blank"><img class="follow-icon" src="./assets/icons/medium-icon-png.webp" alt="Medium Icon"></a>
+                <a class="external-link" href="https://twitter.com/salimkilinc" target="_blank"><img class="follow-icon" src="./assets/icons/x-icon.png" alt="X Icon"></a>
+                <a class="external-link" href="https://www.salimkilinc.com" target="_blank"><img class="follow-icon" src="./assets/icons/salimkilinc-icon.svg" alt="salimkilinc.com Icon"></a>
+            </div>
+            <div class="inner-box-bottom-right">
+                <a class="external-link" href="https://www.salimkilinc.com" target="_blank">salimkilinc.com</a>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-item" id="f-first">
+                <p class="copyright">© 2024 Salim Kılınç</p>
+            </div>
+            <div class="footer-item" id="f-second">
+                <div class="call-div">
+                    <p class="cwf">Call</p>
+                    <a class="external-link" href="tel:+90-553-7565562">+90 553 756 55 62</a>
+                </div>
+                <div class="write-div">
+                    <p class="cwf">Write</p>
+                    <a class="external-link" href="mailto:salimkilinc@yahoo.com">salimkilinc@yahoo.com</a>
+                </div>
+                <div class="follow-div">
+                    <p class="cwf">Follow</p>
+                    <a class="external-link" href="https://www.linkedin.com/in/salimkilinc/" target="_blank"><img class="follow-icon" src="./assets/icons/linkedin-icon.png" alt="LinkedIn Icon"></a>
+                    <a class="external-link" href="https://github.com/salimkilinc" target="_blank"><img class="follow-icon" src="./assets/icons/github-icon.png" alt="GitHub Icon"></a>
+                    <a class="external-link" href="https://medium.com/@salimkilinc" target="_blank"><img class="follow-icon" src="./assets/icons/medium-icon-png.webp" alt="Medium Icon"></a>
+                    <a class="external-link" href="https://twitter.com/salimkilinc" target="_blank"><img class="follow-icon" src="./assets/icons/x-icon.png" alt="X Icon"></a>
+                    <a class="external-link" href="https://www.salimkilinc.com" target="_blank"><img class="follow-icon" src="./assets/icons/salimkilinc-icon.svg" alt="salimkilinc.com Icon"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+    $(".inner-box-bottom .follow-icon").on("mouseover", function () {
+        $(this).css("height", "4.5vh")
+    });
+
+    $(".inner-box-bottom .follow-icon").on("mouseout", function () {
+        $(this).css("height", "4vh")
+    });
+</script>
+<script src="./script.js"></script>
+</body>
+</html>

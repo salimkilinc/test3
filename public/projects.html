@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | SALİM KILINÇ</title>
+    <link rel="icon" href="../assets/icons/salimkilinc-icon.svg">
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://fonts.cdnfonts.com/css/avenir-lt-pro" rel="stylesheet">
+    <link href="https://db.onlinewebfonts.com/c/028b4cfdfab5d1049178e9b1eb42f49e?family=Poppins+SemiBold" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <style>
+        main {
+            padding: 10vh;
+            padding-left: 25vw;
+            padding-right: 25vw;
+            display: grid;
+        }
+
+        .heading-intro {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        
+        .heading {
+            display: flex;
+        }
+
+        .heading > p {
+            margin: 0;
+            font-family: "Poppins SemiBold", sans-serif;
+            font-size: 4vh;
+        }
+
+        .intro > p {
+            font-size: 2.5vh;
+        }
+
+        .projects {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 5vh;
+            margin-bottom: 5vh;
+        }
+
+        .project-box {
+            display: grid;
+            grid-template-columns: 3fr 2fr;
+            grid-template-rows: 1fr;
+            margin-top: 5vh;
+            margin-bottom: 5vh;
+            box-shadow: 0 0 36px 0px grey;
+        }
+
+        .inner-box-left {
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .inner-box-left > p {
+            margin-top: 0;
+            margin-left: 3.5vh;
+            margin-right: 2vh;
+        }
+
+        .inner-box-right {
+            background-color: white;
+            display: flex;
+        }
+
+        .project-header {
+            display: flex;
+            margin-top: 5vh;
+        }
+
+        .blue-box-tall {
+            height: 7vh;
+            width: 2.5vh;
+            background-color: #0050ff;
+            margin: 2vh;
+            margin-left: 0;
+            margin-top: 4vh;
+        }
+
+        .project-header p {
+            margin-bottom: 0;
+        }
+
+        .project-link {
+            color: #0050ff;
+            font-family: "Poppins SemiBold", sans-serif;
+            text-decoration: none;
+            font-size: 3vh;
+        }
+
+        .project-link:hover{
+            color: dimgrey;
+        }
+
+        .project-id {
+            font-weight: bold;
+            font-size: 2vh;
+        }
+
+        .project-explanation {
+            margin-left: 3.5vh;
+            margin-right: 2vh;
+            height: 22vh;
+        }
+
+        .project-explanation > p {
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+
+        .button-div {
+            display: flex;
+            margin-top: 1vh;
+            margin-bottom: 3vh;
+            margin-left: 3.5vh;
+            margin-right: 2vh;
+            justify-content: end;
+        }    
+
+        @media (max-width:1410px) {
+            main {
+                padding-left: 5vw;
+                padding-right: 5vw;
+            }
+
+            .project-box {
+                display: grid;
+                grid-template-columns: 1fr;
+            }
+            
+            .inner-box-right {
+                display: none;
+            }
+
+            .inner-box-left{
+                text-align: center;
+            }
+
+            .inner-box-left > p {
+                margin-top: 1vh;
+            }
+
+            .project-header {
+                display: flex;
+                flex-direction: column;
+                margin-top: 1%;
+                margin-left: 2.5vw;
+                margin-right: 2.5vw;
+                align-items: center;
+            }
+
+            .project-header p {
+                font-size: 2.5vh;
+            }
+
+            .blue-box-tall {
+                background-color: #0050ff;
+                height: 0.5vh;
+                width: 90%;
+                margin: 0;
+                margin-top: 2vh;
+            }
+
+            .project-explanation {
+                height: 30vh;
+            }
+
+            .ds05 {
+                height: 18vh;
+            }
+
+            .ds01 {
+                height: 34vh;
+            }
+            
+            .button-div {
+                justify-content: center;
+                margin-top: 1vh;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="header-item" id="h-first">
+                <div class="blue-box"></div>
+            </div>
+            <div class="header-item" id="h-second">
+                <a class="external-link" href="https://www.salimkilinc.com" target="_blank"><p><span class="name">Salim Kılınç </span>/ DATA SCIENTIST</p></a>
+            </div>
+            <div class="header-item" id="h-third">
+                <p>Good artists borrow, great artists steal.</p>
+            </div>
+            <div class="header-item" id="h-fourth">
+                <ul class="menu">
+                    <li><a href="../index.html">ABOUT ME</a></li>
+                    <li><a href="./cv.html">CV</a></li>
+                    <li class="dropdown">
+                        <a id="current-page" href="./projects.html">PROJECTS</a>
+                        <div class="dropdown-content">
+                            <a href="https://www.salimkilinc.com/building-a-recommender-system"  target="_blank">Recommender Systems</a>
+                            <a href="https://www.salimkilinc.com/power-of-natural-language-processing"  target="_blank">Natural Language Processing</a>
+                            <a href="https://www.salimkilinc.com/red-wine-quality-classifier" target="_blank">Balanced Classification</a>
+                            <a href="https://www.salimkilinc.com/all-inclusive-imbalanced-classification" target="_blank">Imbalanced Classification</a>
+                            <a href="https://www.salimkilinc.com/web-scraping-and-machine-learning" target="_blank">Web Scraping and Machine Learning</a>
+                            <a href="https://www.salimkilinc.com/my-hello-world-to-data-science" target="_blank">My 'Hello World' to Data Science</a>
+                        </div>
+                    </li>
+                    <li><a href="./contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="heading-intro">
+            <div class="heading">
+                <div class="blue-box-large"></div>
+                <p>Projects</p>
+            </div>
+            <div class="intro">
+                <p>Check out the projects I completed during my Data Science Bootcamp at Istanbul Data Science Academy below. 
+                    I'll be adding more as I progress in my learning journey.</p>
+            </div>
+        </section>
+        <section class="projects">
+            <div class="project-box">
+                <div class="inner-box-left">
+                    <div class="project-header">
+                        <div class="blue-box-tall"></div>
+                        <a class="project-link" href="https://www.salimkilinc.com/building-a-recommender-system" target="_blank">
+                            <p>Data Science Capstone Project: Building a Recommender System</p>
+                        </a>
+                    </div>
+                    <p class="project-id">Istanbul Data Science Academy Project 5</p>
+                    <div class="project-explanation ds05">
+                        <p style="line-height: 4vh;">I have successfully concluded the Data Science Bootcamp at the Istanbul Data Science Academy. 
+                        In this article, I am pleased to present my capstone project.</p>
+                    </div>
+                    <div class="button-div">
+                        <a href="https://www.salimkilinc.com/building-a-recommender-system" target="_blank"><button class="blue-button">Read More</button></a>
+                    </div>
+                </div>
+                <div class="inner-box-right">
+                    <img src="../assets/images/wine1.png" style="width: 20vw; height: initial;">
+                </div>
+            </div>
+            <div class="project-box">
+                <div class="inner-box-left">
+                    <div class="project-header">
+                        <div class="blue-box-tall"></div>
+                        <a class="project-link" href="https://www.salimkilinc.com/power-of-natural-language-processing" target="_blank">
+                            <p>Unleashing the Power of Natural Language Processing</p>
+                        </a>
+                    </div>
+                    <p class="project-id">Istanbul Data Science Academy Project 4</p>
+                    <div class="project-explanation ds04">
+                        <p style="line-height: 4vh;">For our fourth projects at Istanbul Data Science Academy’s Data Science Bootcamp, each member of Team-2 has chosen to work independently. 
+                        In this article, I want to present my project where I went through all the steps of a topic modeling project.</p>
+                    </div>
+                    <div class="button-div">
+                        <a href="https://www.salimkilinc.com/power-of-natural-language-processing" target="_blank"><button class="blue-button">Read More</button></a>
+                    </div>
+                </div>
+                <div class="inner-box-right">
+                    <img src="../assets/images/restaurant.png" style="width: 20vw; height: initial;">
+                </div>
+            </div>
+            <div class="project-box">
+                <div class="inner-box-left">
+                    <div class="project-header">
+                        <div class="blue-box-tall"></div>
+                        <a class="project-link" href="https://www.salimkilinc.com/red-wine-quality-classifier" target="_blank">
+                            <p>Red Wine Quality Classifier</p>
+                        </a>
+                    </div>
+                    <p class="project-id">Istanbul Data Science Academy Project 3.1</p>
+                    <div class="project-explanation ds03-1">
+                        <p style="line-height: 4vh;">In the third project of Istanbul Data Science Academy’s Data Science Bootcamp, we worked with an imbalanced dataset. 
+                            In this short post, I would like to briefly introduce my hobby project in which I worked on a balanced dataset in addition to the third project.</p>
+                    </div>
+                    <div class="button-div">
+                        <a href="https://www.salimkilinc.com/red-wine-quality-classifier" target="_blank"><button class="blue-button">Read More</button></a>
+                    </div>
+                </div>
+                <div class="inner-box-right">
+                    <img src="../assets/images/wine2.png" style="width: 20vw; height: initial;">
+                </div>
+            </div>
+            <div class="project-box">
+                <div class="inner-box-left">
+                    <div class="project-header">
+                        <div class="blue-box-tall"></div>
+                        <a class="project-link" href="https://www.salimkilinc.com/all-inclusive-imbalanced-classification" target="_blank">
+                            <p>All-Inclusive Imbalanced Classification for Beginners</p>
+                        </a>
+                    </div>
+                    <p class="project-id">Istanbul Data Science Academy Project 3</p>
+                    <div class="project-explanation ds03">
+                        <p style="line-height: 4vh;">We have completed our third project as Team-2 in Istanbul Data Science Academy’s Data Science Bootcamp. 
+                            In this article, I would like to introduce our project where I experienced all the steps of an imbalanced classification project for beginners.</p>
+                    </div>
+                    <div class="button-div">
+                        <a href="https://www.salimkilinc.com/all-inclusive-imbalanced-classification" target="_blank"><button class="blue-button">Read More</button></a>
+                    </div>
+                </div>
+                <div class="inner-box-right">
+                    <img src="../assets/images/citibike.png" style="width: 20vw; height: initial;">
+                </div>
+            </div>
+            <div class="project-box">
+                <div class="inner-box-left">
+                    <div class="project-header">
+                        <div class="blue-box-tall"></div>
+                        <a class="project-link" href="https://www.salimkilinc.com/web-scraping-and-machine-learning" target="_blank">
+                            <p>First Steps to Web Scraping, Regression and Machine Learning</p>
+                        </a>
+                    </div>
+                    <p class="project-id">Istanbul Data Science Academy Project 2</p>
+                    <div class="project-explanation ds02">
+                        <p style="line-height: 4vh;">We completed the second project as Team-2 in the Data Science Bootcamp of Istanbul Data Science Academy. 
+                            In this article, I would like to introduce you to our project, where I took my first steps into Web Scraping, Regression and Machine Learning.</p>
+                    </div>
+                    <div class="button-div">
+                        <a href="https://www.salimkilinc.com/web-scraping-and-machine-learning" target="_blank"><button class="blue-button">Read More</button></a>
+                    </div>
+                </div>
+                <div class="inner-box-right">
+                    <img src="../assets/images/car.png" style="width: 20vw; height: initial;">
+                </div>
+            </div>
+            <div class="project-box">
+                <div class="inner-box-left">
+                    <div class="project-header">
+                        <div class="blue-box-tall"></div>
+                        <a class="project-link" href="https://www.salimkilinc.com/my-hello-world-to-data-science" target="_blank">
+                            <p>My 'Hello World' to Data Science</p>
+                        </a>
+                    </div>
+                    <p class="project-id">Istanbul Data Science Academy Project 1</p>
+                    <div class="project-explanation ds01">
+                        <p style="line-height: 4vh;">In the Data Science Bootcamp of Istanbul Data Science Academy, which I attended for a career change, we completed the first project requested from us as Team-2. 
+                            With my first article, I would like to introduce you to our project, where I said ‘Hello World’ to Software and Data Science.</p>
+                    </div>
+                    <div class="button-div">
+                        <a href="https://www.salimkilinc.com/my-hello-world-to-data-science" target="_blank"><button class="blue-button">Read More</button></a>
+                    </div>
+                </div>
+                <div class="inner-box-right">
+                    <img src="../assets/images/train.png" style="width: 20vw; height: initial;">
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-item" id="f-first">
+                <p class="copyright">© 2024 Salim Kılınç</p>
+            </div>
+            <div class="footer-item" id="f-second">
+                <div class="call-div">
+                    <p class="cwf">Call</p>
+                    <a class="external-link" href="tel:+90-553-7565562">+90 553 756 55 62</a>
+                </div>
+                <div class="write-div">
+                    <p class="cwf">Write</p>
+                    <a class="external-link" href="mailto:salimkilinc@yahoo.com">salimkilinc@yahoo.com</a>
+                </div>
+                <div class="follow-div">
+                    <p class="cwf">Follow</p>
+                    <a class="external-link" href="https://www.linkedin.com/in/salimkilinc/" target="_blank"><img class="follow-icon" src="../assets/icons/linkedin-icon.png" alt="LinkedIn Icon"></a>
+                    <a class="external-link" href="https://github.com/salimkilinc" target="_blank"><img class="follow-icon" src="../assets/icons/github-icon.png" alt="GitHub Icon"></a>
+                    <a class="external-link" href="https://medium.com/@salimkilinc" target="_blank"><img class="follow-icon" src="../assets/icons/medium-icon-png.webp" alt="Medium Icon"></a>
+                    <a class="external-link" href="https://twitter.com/salimkilinc" target="_blank"><img class="follow-icon" src="../assets/icons/x-icon.png" alt="X Icon"></a>
+                    <a class="external-link" href="https://www.salimkilinc.com" target="_blank"><img class="follow-icon" src="../assets/icons/salimkilinc-icon.svg" alt="salimkilinc.com Icon"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="../script.js"></script>
+</body>
+</html>

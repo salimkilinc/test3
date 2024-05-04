@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | SALİM KILINÇ</title>
+    <link rel="icon" href="../assets/icons/salimkilinc-icon.svg">
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://fonts.cdnfonts.com/css/avenir-lt-pro" rel="stylesheet">
+    <link href="https://db.onlinewebfonts.com/c/028b4cfdfab5d1049178e9b1eb42f49e?family=Poppins+SemiBold" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <style>
+        main {
+            padding: 10vh;
+            padding-left: 20vw;
+            padding-right: 20vw;
+            display: grid;
+        }
+
+        .heading-intro {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        
+        .heading {
+            display: flex;
+        }
+
+        .heading > p {
+            margin: 0;
+            font-family: "Poppins SemiBold", sans-serif;
+            font-size: 4vh;
+        }
+
+        .contact {
+            margin-top: 10vh;
+            margin-bottom: 5vh;
+            display: flex;
+            justify-content: center;
+        }
+
+        .contact-form {
+            background-color: white;
+            text-align: justify;
+            line-height: 4vh;
+            padding: 5vh;
+            margin-top: 5vh;
+            margin-bottom: 5vh;
+            box-shadow: 0 0 36px 0px grey;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 3vh;
+            min-height: 50vh;
+            min-width: 40vw;
+        }
+
+        .contact-form > p {
+            margin: 0;
+        }
+
+        .info {
+            display: flex;
+            flex-direction: column;
+            gap: 3vh;
+            font-size: 1.8vh;
+            font-weight: bold;
+        }
+
+        input, textarea {
+            color: #0050ff;
+            font-family: 'Avenir LT Pro', sans-serif;
+            border-style: solid;
+            border-width: 2px;
+            border-color: black;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            outline: none;
+        }
+
+        textarea {
+            resize: none;
+        }
+
+        .blue-button {
+            font-size: 2vh;
+            font-weight: normal;
+        }
+
+        .full-name {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .full-name input {
+            min-width: 18vw;
+        }
+
+        @media (max-width:800px) {
+            main {
+                padding-left: 5vw;
+                padding-right: 5vw;
+            }
+
+            .full-name {
+                flex-direction: column;
+                gap: 3vh;
+            }
+
+            .contact-form {
+                max-width: 70vw;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="header-item" id="h-first">
+                <div class="blue-box"></div>
+            </div>
+            <div class="header-item" id="h-second">
+                <a class="external-link" href="https://www.salimkilinc.com" target="_blank"><p><span class="name">Salim Kılınç </span>/ DATA SCIENTIST</p></a>
+            </div>
+            <div class="header-item" id="h-third">
+                <p>Good artists borrow, great artists steal.</p>
+            </div>
+            <div class="header-item" id="h-fourth">
+                <ul class="menu">
+                    <li><a href="../index.html">ABOUT ME</a></li>
+                    <li><a href="./cv.html">CV</a></li>
+                    <li class="dropdown">
+                        <a href="./projects.html">PROJECTS</a>
+                        <div class="dropdown-content">
+                            <a href="https://www.salimkilinc.com/building-a-recommender-system"  target="_blank">Recommender Systems</a>
+                            <a href="https://www.salimkilinc.com/power-of-natural-language-processing"  target="_blank">Natural Language Processing</a>
+                            <a href="https://www.salimkilinc.com/red-wine-quality-classifier" target="_blank">Balanced Classification</a>
+                            <a href="https://www.salimkilinc.com/all-inclusive-imbalanced-classification" target="_blank">Imbalanced Classification</a>
+                            <a href="https://www.salimkilinc.com/web-scraping-and-machine-learning" target="_blank">Web Scraping and Machine Learning</a>
+                            <a href="https://www.salimkilinc.com/my-hello-world-to-data-science" target="_blank">My 'Hello World' to Data Science</a>
+                        </div>
+                    </li>
+                    <li><a id="current-page" href="./contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="heading-intro">
+            <div class="heading">
+                <div class="blue-box-large"></div>
+                <p>Contact</p>
+            </div>
+        </section>
+        <section class="contact">
+            <div class="contact-form">
+                <div class="full-name">
+                    <div class="info">
+                        <label for="first-name">First Name<span style="color: #0050ff;"> * </span></label>
+                        <input type="text" name="first-name" required id="first-name" />
+                    </div>
+                    <div class="info">
+                        <label for="last-name">Last Name<span style="color: #0050ff;"> * </span></label>
+                        <input type="text" name="last-name" required id="last-name" />
+                    </div>
+                </div>
+                <div class="info">
+                    <label for="email">Email<span style="color: #0050ff;"> * </span></label>
+                    <input type="email" name="email" required id="email" />
+                </div>
+                <div class="info">
+                    <label for="subject">Subject</label>
+                    <input type="text" name="subject" id="subject" />
+                </div>
+                <div class="info">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="4" cols="50"></textarea>
+                </div>
+                <div class="info">
+                    <button class="blue-button">SEND</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-item" id="f-first">
+                <p class="copyright">© 2024 Salim Kılınç</p>
+            </div>
+            <div class="footer-item" id="f-second">
+                <div class="call-div">
+                    <p class="cwf">Call</p>
+                    <a class="external-link" href="tel:+90-553-7565562">+90 553 756 55 62</a>
+                </div>
+                <div class="write-div">
+                    <p class="cwf">Write</p>
+                    <a class="external-link" href="mailto:salimkilinc@yahoo.com">salimkilinc@yahoo.com</a>
+                </div>
+                <div class="follow-div">
+                    <p class="cwf">Follow</p>
+                    <a class="external-link" href="https://www.linkedin.com/in/salimkilinc/" target="_blank"><img class="follow-icon" src="../assets/icons/linkedin-icon.png" alt="LinkedIn Icon"></a>
+                    <a class="external-link" href="https://github.com/salimkilinc" target="_blank"><img class="follow-icon" src="../assets/icons/github-icon.png" alt="GitHub Icon"></a>
+                    <a class="external-link" href="https://medium.com/@salimkilinc" target="_blank"><img class="follow-icon" src="../assets/icons/medium-icon-png.webp" alt="Medium Icon"></a>
+                    <a class="external-link" href="https://twitter.com/salimkilinc" target="_blank"><img class="follow-icon" src="../assets/icons/x-icon.png" alt="X Icon"></a>
+                    <a class="external-link" href="https://www.salimkilinc.com" target="_blank"><img class="follow-icon" src="../assets/icons/salimkilinc-icon.svg" alt="salimkilinc.com Icon"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+    $("input, textarea").on("mouseover", function () {
+        $(this).css({
+            "border-width": "3px",
+            "border-color": "#0050ff" 
+        });
+    });
+
+    $("input, textarea").on("mouseout", function () {
+        if (!$(this).is(":focus")) {
+            $(this).css({
+                "border-width": "2px",
+                "border-color": "black" 
+            });
+        }
+    });
+
+    $("input, textarea").on("focusin", function () {
+        $(this).css({
+            "border-width": "3px",
+            "border-color": "#0050ff" 
+        });
+    });
+
+    $("input, textarea").on("focusout", function () {
+        $(this).css({
+            "border-width": "2px",
+            "border-color": "black" 
+        });
+
+        if ($(this).val().trim() === "" && $(this).attr("required")) {
+            $(this).css("border-color", "red");
+        }
+    });
+
+</script>
+<script src="../script.js"></script>
+</body>
+</html>

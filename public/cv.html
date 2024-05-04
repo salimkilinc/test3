@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV | SALİM KILINÇ</title>
+    <link rel="icon" href="../assets/icons/salimkilinc-icon.svg">
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://fonts.cdnfonts.com/css/avenir-lt-pro" rel="stylesheet">
+    <link href="https://db.onlinewebfonts.com/c/028b4cfdfab5d1049178e9b1eb42f49e?family=Poppins+SemiBold" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <style>
+        main {
+            padding: 10vh;
+            padding-left: 25vw;
+            padding-right: 25vw;
+            display: grid;
+        }
+
+        .heading-intro {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        
+        .heading {
+            display: flex;
+        }
+
+        .heading > p {
+            margin: 0;
+            font-family: "Poppins SemiBold", sans-serif;
+            font-size: 4vh;
+        }
+
+        .about {
+            margin-top: 10vh;
+            margin-bottom: 5vh;
+        }
+
+        .sub-heading > p {
+            font-family: "Poppins SemiBold", sans-serif;
+            font-size: 3vh;
+        }
+
+        .download-cv {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .blue-button {
+            padding-left: 3.5vh;
+            padding-right: 3.5vh;
+        }
+
+        .about-box {
+            background-color: white;
+            text-align: justify;
+            line-height: 4vh;
+            padding: 5vh;
+            margin-top: 5vh;
+            margin-bottom: 5vh;
+            box-shadow: 0 0 36px 0px grey;
+        }
+
+        .about-box > p {
+            margin: 0;
+        }
+
+        .outer-box {
+            background-color: white;
+            padding: 5vh;
+            margin-top: 5vh;
+            margin-bottom: 5vh;
+            box-shadow: 0 0 36px 0px grey;
+            display: grid;
+            grid-template-rows: auto auto;
+            grid-template-columns: 40% 60%;
+        }
+
+        .inner-box-top {
+            grid-column: span 2;
+            color: #0050ff;
+            font-family: "Poppins SemiBold", sans-serif;
+            font-size: 3vh;
+        }
+
+        .inner-box-left {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .inner-box-right {
+            display: flex;
+            flex-direction: column;
+            line-height: 4vh;
+        }
+
+        .skills-certifications {
+            margin-bottom: 5vh;
+        }
+
+        .skill-box {
+            background-color: white;
+            line-height: 4vh;
+            padding: 5vh;
+            margin-top: 5vh;
+            margin-bottom: 5vh;
+            box-shadow: 0 0 36px 0px grey;
+        }
+
+        li {
+            list-style-type: square;
+            font-size: smaller;
+        }
+
+        .menu li {
+            list-style-type: none;
+        }
+
+        li::marker {
+            color: #0050ff;
+            font-size: 3vh;
+        }
+
+        .references {
+            margin-bottom: 5vh;
+        }
+
+        .ref-contact {
+            display: flex;
+            gap: 3vh;
+        }
+
+        .education {
+            margin-bottom: 5vh;
+        }
+
+        .experience {
+            margin-bottom: 5vh;
+        }
+
+        @media (max-width:800px) {
+            main {
+                padding-left: 5vw;
+                padding-right: 5vw;
+            }
+
+            .about, .skills-certifications, .references, .education, .experience {
+                margin-top: 2.5vh;
+                margin-bottom: 0;
+            }
+
+            .about-box {
+                line-height: 2.5vh;
+                padding: 5vw;
+                margin-top: 2.5vh;
+                margin-bottom: 2.5vh;
+                text-align: center;
+            }
+
+            .outer-box {
+                padding: 5vw;
+                margin-top: 5vw;
+                margin-bottom: 5vw;
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .inner-box-top > p {
+                margin: 0;
+                font-size: 2vh;
+            }
+
+            .inner-box-left {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                gap: 10vw;
+            }
+
+            .inner-box-right {
+                line-height: 2.5vh;
+            }
+
+            .reference-item.inner-box-left {
+                flex-direction: column;
+                gap: 0;
+            }
+
+            .ref-contact {
+                display: flex;
+                justify-content: center;
+                
+            }
+
+            li {
+                text-align: left;
+            }
+
+            .skill-box {
+                line-height: 2.5vh;
+                padding: 5vw;
+                margin-top: 5vw;
+                margin-bottom: 5vw;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="header-item" id="h-first">
+                <div class="blue-box"></div>
+            </div>
+            <div class="header-item" id="h-second">
+                <a class="external-link" href="https://www.salimkilinc.com" target="_blank"><p><span class="name">Salim Kılınç </span>/ DATA SCIENTIST</p></a>
+            </div>
+            <div class="header-item" id="h-third">
+                <p>Good artists borrow, great artists steal.</p>
+            </div>
+            <div class="header-item" id="h-fourth">
+                <ul class="menu">
+                    <li><a href="../index.html">ABOUT ME</a></li>
+                    <li><a id="current-page" href="./cv.html">CV</a></li>
+                    <li class="dropdown">
+                        <a href="./projects.html">PROJECTS</a>
+                        <div class="dropdown-content">
+                            <a href="https://www.salimkilinc.com/building-a-recommender-system"  target="_blank">Recommender Systems</a>
+                            <a href="https://www.salimkilinc.com/power-of-natural-language-processing"  target="_blank">Natural Language Processing</a>
+                            <a href="https://www.salimkilinc.com/red-wine-quality-classifier" target="_blank">Balanced Classification</a>
+                            <a href="https://www.salimkilinc.com/all-inclusive-imbalanced-classification" target="_blank">Imbalanced Classification</a>
+                            <a href="https://www.salimkilinc.com/web-scraping-and-machine-learning" target="_blank">Web Scraping and Machine Learning</a>
+                            <a href="https://www.salimkilinc.com/my-hello-world-to-data-science" target="_blank">My 'Hello World' to Data Science</a>
+                        </div>
+                    </li>
+                    <li><a href="./contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="heading-intro">
+            <div class="heading">
+                <div class="blue-box-large"></div>
+                <p>Curriculum Vitae</p>
+            </div>
+        </section>
+        <section class="about">
+            <div class="sub-heading download-cv">
+                <p>About</p>
+                <a href="../assets/documents/Salim Kilinc-CV.docx"><button class="blue-button">DOWNLOAD CV</button></a>
+            </div>
+            <div class="about-box">
+                <p>
+                    I completed my studies at Dokuz Eylül University, specializing in Public Administration, in 2018. 
+                    Following a series of short-term sales roles, I experienced a period of unemployment due to my involvement in the airline second pilot nomination process and some health issues. 
+                    Presently residing in Mersin, Turkey, I am employed as a remote Live Support Representative for an IT company based in Zagreb. In pursuit of a career change, 
+                    I enrolled in the Data Science Bootcamp at Istanbul Data Science Academy in June 2023, successfully completing the program in January 2024. 
+                    I am now a Junior Data Scientist with a fervent interest in simplifying intricate information, delving into the realm of data, and translating it into practical insights for informed decision-making and innovative solutions. 
+                    My objective is continuous self-improvement in areas closely aligned with data science.
+                </p>
+            </div>
+        </section>
+        <section class="skills-certifications">
+            <div class="sub-heading">
+                <p>Certifications & Skills</p>
+            </div>
+            <div class="outer-box certificate-box">
+                <div class="certificate-item inner-box-top">
+                    <p>PYTHON DEVELOPER</p>
+                </div>
+                <div class="certificate-item inner-box-left">
+                    <p>02/2024</p>
+                    <p style="font-size: smaller;">DataCamp<br />Remote</p>
+                </div>
+                <div class="certificate-item inner-box-right">
+                    <p>It's not a certification acquired through an exam, but rather a career track with a statement of accomplishment, specifically focusing on the essential Python skills relevant to data science. 
+                        Therefore, I prefer to refer to it as 'Fundamentals of Python for Data Science' rather than 'Python Developer'. Please check out my statement of accomplishment below.
+                    </p>
+                    <a href="https://www.datacamp.com/statement-of-accomplishment/track/c1534329247239d7edb6a3750232e21760cd5093?raw=1" target="_blank"><button class="white-button">SHOW CREDENTIAL</button></a>
+                </div>
+            </div>
+            <div class="outer-box certificate-box">
+                <div class="certificate-item inner-box-top">
+                    <p>DATA SCIENCE</p>
+                </div>
+                <div class="certificate-item inner-box-left">
+                    <p>01/2024</p>
+                    <p style="font-size: smaller;">Istanbul Data Science Academy<br />Istanbul, Turkey</p>
+                </div>
+                <div class="certificate-item inner-box-right">
+                    <p>Please check out my certificate below.</p>
+                    <a href="https://istdatascience.com/certificate/DSMAY23SK001.pdf" target="_blank"><button class="white-button">SHOW CREDENTIAL</button></a>
+                </div>
+            </div>
+            <div class="outer-box certificate-box">
+                <div class="certificate-item inner-box-top">
+                    <p>STATISTICS AND MATHEMATICS FOR DATA SCIENCE</p>
+                </div>
+                <div class="certificate-item inner-box-left">
+                    <p>10/2023</p>
+                    <p style="font-size: smaller;">Istanbul Data Science Academy<br />Istanbul, Turkey</p>
+                </div>
+                <div class="certificate-item inner-box-right">
+                    <p>Please check out my certificate below.</p>
+                    <a href="https://istdatascience.com/certificates/3457539762ddc786403e969d7389c310/" target="_blank"><button class="white-button">SHOW CREDENTIAL</button></a>
+                </div>
+            </div>
+            <div class="skill-box">
+                <div class="sub-heading">
+                    <p>Professional Skillset</p>
+                </div>
+                <div class="skill-div">
+                    <ul>
+                        <li>Data Analysis · Data Visualization · Jupyter Notebook · Python · NumPy · Pandas · Matplotlib · Seaborn</li>
+                        <li>Data Modeling · Machine Learning · Linear Regression · Scikit-Learn · Statsmodels · Web Scraping · Beautiful Soup · Selenium</li>
+                        <li>SQL · Oracle SQL · PostgreSQL · Data Classification · Logistic Regression · XGBoost · Random Forest · Decision Trees · K-Nearest Neighbors (KNN) · Confusion Matrix · Explainable AI · Streamlit</li>
+                        <li>NoSQL · MongoDB · Natural Language Processing (NLP) · Data Preprocessing · Topic Modeling · NLTK · NMF · spaCy</li>
+                        <li>Recommender Systems</li>
+                        <li>Regular Expressions, Data Structures and Algorithms, Shell, Git, Github, Python Packages, Unit Testing, Object-Oriented Programming</li>
+                    </ul>
+                </div>
+                <div class="sub-heading">
+                    <p>Languages</p>
+                </div>
+                <div class="language-div">
+                    <ul>
+                        <li>Turkish (native)</li>
+                        <li>English (proficient)</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="references">
+            <div class="sub-heading">
+                <p>References</p>
+            </div>
+            <div class="outer-box reference-box">
+                <div class="reference-item inner-box-top">
+                    <p>ZEKERIYA BESIROGLU</p>
+                </div>
+                <div class="reference-item inner-box-left">
+                    <p>PROFESSIONAL REFERENCE</p>
+                    <p style="font-size: smaller;">Istanbul Data Science Academy<br />Istanbul, Turkey</p>
+                    <div class="ref-contact">
+                        <a href="https://www.linkedin.com/in/zekeriyabesiroglu/" target="_blank"><button class="white-button">LINKEDIN</button></a>
+                        <a href="mailto:zekeriyabesiroglu@gmail.com"><button class="white-button">EMAIL</button></a>
+                    </div>
+                </div>
+                <div class="reference-item inner-box-right">
+                    <ul>
+                        <li>Big Data Architect</li>
+                        <li>Google Cloud Certified Data Engineer</li>
+                        <li>Google Cloud Certified Machine Learning Engineer</li>
+                        <li>Google Cloud Authorized Trainer</li>
+                        <li>Co-founder of Istanbul Data Science Academy</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="outer-box reference-box">
+                <div class="reference-item inner-box-top">
+                    <p>ATA OZARSLAN</p>
+                </div>
+                <div class="reference-item inner-box-left">
+                    <p>PROFESSIONAL REFERENCE</p>
+                    <p style="font-size: smaller;">Istanbul Data Science Academy<br />Istanbul, Turkey</p>
+                    <div class="ref-contact">
+                        <a href="https://www.linkedin.com/in/ataozarslan/" target="_blank"><button class="white-button">LINKEDIN</button></a>
+                        <a href="mailto:ata.ozarslan@istdsa.com"><button class="white-button">EMAIL</button></a>
+                    </div>
+                </div>
+                <div class="reference-item inner-box-right">
+                    <ul>
+                        <li>Data Scientist</li>
+                        <li>Instructor at Istanbul Data Science Academy</li>
+                        <li>Content Creator</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="education">
+            <div class="sub-heading">
+                <p>Education</p>
+            </div>
+            <div class="outer-box education-box">
+                <div class="education-item inner-box-top">
+                    <p>DATA SCIENCE BOOTCAMP</p>
+                </div>
+                <div class="education-item inner-box-left">
+                    <p>06/2023 -- 01/2024</p>
+                    <p style="font-size: smaller;">Istanbul Data Science Academy<br />Istanbul, Turkey</p>
+                </div>
+                <div class="education-item inner-box-right">
+                    <p>Please check out my projects.</p>
+                    <a href="./projects.html"><button class="white-button">PROJECTS</button></a>
+                </div>
+            </div>
+            <div class="outer-box education-box">
+                <div class="education-item inner-box-top">
+                    <p>BACHELOR OF PUBLIC ADMINISTRATION</p>
+                </div>
+                <div class="education-item inner-box-left">
+                    <p>09/2016 -- 08/2018</p>
+                    <p style="font-size: smaller;">Dokuz Eylul Unıversity<br />Izmir, Turkey</p>
+                </div>
+                <div class="education-item inner-box-right">
+                    <p>3rd and 4th grade only.</p>
+                </div>
+            </div>
+            <div class="outer-box education-box">
+                <div class="education-item inner-box-top">
+                    <p>ARMED FORCES / PUBLIC ADMINISTRATION</p>
+                </div>
+                <div class="education-item inner-box-left">
+                    <p>09/2014 -- 07/2016</p>
+                    <p style="font-size: smaller;">Turkish Military Academy<br />Ankara, Turkey</p>
+                </div>
+                <div class="education-item inner-box-right">
+                    <p>1st and 2nd grade only. Following the 2016 coup attempt in Turkey, all cadets in the Turkish Army were transferred to civilian universities.</p>
+                </div>
+            </div>
+            <div class="outer-box education-box">
+                <div class="education-item inner-box-top">
+                    <p>HIGH SCHOOL</p>
+                </div>
+                <div class="education-item inner-box-left">
+                    <p>08/2009 -- 07/2014</p>
+                    <p style="font-size: smaller;">Maltepe Military High School<br />Izmir, Turkey</p>
+                </div>
+                <div class="education-item inner-box-right">
+                    <p>1-year English Preparation Class included.</p>
+                </div>
+            </div>
+        </section>
+        <section class="experience">
+            <div class="sub-heading">
+                <p>Experience</p>
+            </div>
+            <div class="outer-box experience-box">
+                <div class="experience-item inner-box-top">
+                    <p>LIVE SUPPORT AGENT</p>
+                </div>
+                <div class="experience-item inner-box-left">
+                    <p>02/2022 -- Present</p>
+                    <p style="font-size: smaller;">Enter Solutions<br />Zagreb, Croatia (Remote)</p>
+                </div>
+                <div class="experience-item inner-box-right">
+                    <p>Even though I am not in the position of a data scientist or data analyst, the fact that I work closely with data in this job significantly contributes to my future career.</p>
+                </div>
+            </div>
+            <div class="outer-box experience-box">
+                <div class="experience-item inner-box-top">
+                    <p>REAL ESTATE SPECIALIST</p>
+                </div>
+                <div class="experience-item inner-box-left">
+                    <p>07/2019 -- 08/2019</p>
+                    <p style="font-size: smaller;">Elmas Gayrimenkul<br />Mersin, Turkey</p>
+                </div>
+                <div class="experience-item inner-box-right">
+                    <p>This position is not related to my future career desires.</p>
+                </div>
+            </div>
+            <div class="outer-box experience-box">
+                <div class="experience-item inner-box-top">
+                    <p>SALES SPECIALIST</p>
+                </div>
+                <div class="experience-item inner-box-left">
+                    <p>12/2018 -- 01/2019</p>
+                    <p style="font-size: smaller;">Pronet Security Systems<br />Mersin, Turkey</p>
+                </div>
+                <div class="experience-item inner-box-right">
+                    <p>This position is not related to my future career desires.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-item" id="f-first">
+                <p class="copyright">© 2024 Salim Kılınç</p>
+            </div>
+            <div class="footer-item" id="f-second">
+                <div class="call-div">
+                    <p class="cwf">Call</p>
+                    <a class="external-link" href="tel:+90-553-7565562">+90 553 756 55 62</a>
+                </div>
+                <div class="write-div">
+                    <p class="cwf">Write</p>
+                    <a class="external-link" href="mailto:salimkilinc@yahoo.com">salimkilinc@yahoo.com</a>
+                </div>
+                <div class="follow-div">
+                    <p class="cwf">Follow</p>
+                    <a class="external-link" href="https://www.linkedin.com/in/salimkilinc/" target="_blank"><img class="follow-icon" src="../assets/icons/linkedin-icon.png" alt="LinkedIn Icon"></a>
+                    <a class="external-link" href="https://github.com/salimkilinc" target="_blank"><img class="follow-icon" src="../assets/icons/github-icon.png" alt="GitHub Icon"></a>
+                    <a class="external-link" href="https://medium.com/@salimkilinc" target="_blank"><img class="follow-icon" src="../assets/icons/medium-icon-png.webp" alt="Medium Icon"></a>
+                    <a class="external-link" href="https://twitter.com/salimkilinc" target="_blank"><img class="follow-icon" src="../assets/icons/x-icon.png" alt="X Icon"></a>
+                    <a class="external-link" href="https://www.salimkilinc.com" target="_blank"><img class="follow-icon" src="../assets/icons/salimkilinc-icon.svg" alt="salimkilinc.com Icon"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="../script.js"></script>
+</body>
+</html>
